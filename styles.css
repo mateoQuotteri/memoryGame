@@ -44,6 +44,10 @@
   .back-face {
     transform: rotateY(180deg);
   }
+
+  .opacity{
+    opacity: 0;
+  }
   
   /* Otros estilos adicionales según tus necesidades */
   
