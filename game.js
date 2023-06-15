@@ -1,6 +1,10 @@
 const allFrontFaces = document.querySelectorAll(".front-face")
 const allMemoryCards = document.querySelectorAll(".memory-card")
-const allBackFaces = document.querySelectorAll(".back-face")
+const allBackFaces = document.querySelectorAll(".back-face");
+const perdisteCartel = document.getElementById("mensaje-perder")
+const ganasteCartel = document.getElementById("felicitaciones")
+
+const game = document.querySelector(".memory-game")
 window.onload = (e) =>  
  {
     setTimeout(() => {
@@ -19,9 +23,12 @@ window.onload = (e) =>
 
 function comparing(cardOne , cardTwo) {
   if (cardOne === cardTwo) {
-    console.log("Ganaste");
+    game.classList.add("none")
+    ganasteCartel.classList.remove("none")
+
   } else {
-    console.log("perdiste");
+    game.classList.add("none")
+    perdisteCartel.classList.remove("none")
   }
 }
 
