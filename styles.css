@@ -1,20 +1,22 @@
 .memory-game {
-    width: 500px;
-    height: 500px;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     perspective: 1000px;
     margin: 0 auto;
   }
   
   .memory-card {
-    width: calc(25% - 10px);
-    height: calc(33.33% - 10px);
+    width: 8%;
+    height: 8em;
     margin: 5px;
     position: relative;
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform 0.5s;
+    box-shadow:2px 2px 5px rgba(0, 0, 0, 0.3)
   }
   
   .memory-card:active,

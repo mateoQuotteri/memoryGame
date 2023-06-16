@@ -23,12 +23,18 @@ window.onload = (e) =>
 
 function comparing(cardOne , cardTwo) {
   if (cardOne === cardTwo) {
-    game.classList.add("none")
-    ganasteCartel.classList.remove("none")
+    setTimeout(() => {
+      game.classList.add("none")
+      ganasteCartel.classList.remove("none")
+      
+    }, 1000);
 
   } else {
-    game.classList.add("none")
-    perdisteCartel.classList.remove("none")
+    setTimeout(() => {
+      game.classList.add("none")
+      perdisteCartel.classList.remove("none")
+      
+    }, 1000);
   }
 }
 
